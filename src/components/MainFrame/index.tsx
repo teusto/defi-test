@@ -1,12 +1,14 @@
-import Search from '../Search';
+"use client"
+import { useTokenData } from '@/hooks/useTokenData';
+import ListingTokens from '../ListingTokens';
 import styles from './mainframe.module.scss';
 
 const MainFrame = () => {
-    return (
+  return (
       <div className={styles.wrapper}>
-        <Search />
+        <ListingTokens />
       </div>
-    )
-  }
-  
-  export default MainFrame;
+  )
+}
+
+export default MainFrame;

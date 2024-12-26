@@ -1,0 +1,19 @@
+.wrapper {
+    //
+    display: inline-block;
+    button{
+        font-size: 1.3rem;
+        background-color: transparent;
+        color: #0d1b2a;
+        border: none;
+        .text {
+            text-decoration: underline;
+            cursor: pointer;
+            transition: color .88s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    
+            &:hover {
+                color: #ee6c4d;
+            }
+        }
+    }
+}

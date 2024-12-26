@@ -4,10 +4,7 @@ import styles from './page.module.scss'
 
 const App = () => {
   return (
-    <div style={{ backgroundColor: '#FDF7F4'}}>
-      <section className={styles.sections}>
-        <Header />
-      </section>
+    <div style={{ backgroundColor: '#e0e1dd'}}>
       <section className={styles.sections}>
         <MainFrame />
       </section>

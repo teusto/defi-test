@@ -1,0 +1,37 @@
+.wrapper{
+    //
+    .navigation{
+        display: flex;
+        justify-content: center;
+        color: #0d1b2a;
+        .link{
+            cursor: pointer;
+            font-weight: 600;
+            font-size: 1.2rem;
+            margin: auto;
+            &:hover {
+                color: #ee6c4d;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper{
+        //
+        .navigation{
+            display: flex;
+            justify-content: space-between;
+            color: #0d1b2a;
+            width: 100%;
+            .link{
+                cursor: pointer;
+                font-weight: 600;
+                font-size: 1rem;
+                &:hover {
+                    color: #ee6c4d;
+                }
+            }
+        }
+    }
+}
