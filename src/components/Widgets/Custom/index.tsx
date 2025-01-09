@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react';
 const Custom = () => {
   return (
     <div className={styles.wrapper}>
-      <span>Click here or drag a view to fix it on the header</span>
+      <span>Drag a module</span>
     </div>
   )
 }

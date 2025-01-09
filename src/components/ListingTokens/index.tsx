@@ -29,12 +29,12 @@ const ListingTokens = () => {
                             <div className={styles.card_mid}>
                                 <div className={styles.mid_top}>
                                     <p className={styles.price}>{formatCryptoValueUpdate(parseFloat(pair.priceUsd))}</p>
-                                    <p className={styles.l24}><span>24h:</span>{pair.priceChange.h24}%</p>
+                                    <p className={styles.l24} style={{color: pair.priceChange.h24 >= 0 ? 'green' : 'red'}}><span>24h:</span>{pair.priceChange.h24}%</p>
                                 </div>
                                 <div className={styles.mid_bottom}>
-                                    <p className={styles.cap}><span>Mkt Cap: </span> {formatCryptoValueUpdate(parseFloat(pair.marketCap))}</p>
-                                    <p className={styles.fdv}><span>FDV: </span> {formatCryptoValueUpdate(parseFloat(pair.fdv))}</p>
-                                    <p className={styles.liquidity}><span>Liquidity: </span> {formatCryptoValueUpdate(parseFloat(pair.liquidity.usd))}</p>
+                                    <p className={styles.cap}><span>Mkt Cap:</span> {formatCryptoValueUpdate(parseFloat(pair.marketCap))}</p>
+                                    <p className={styles.fdv}><span>FDV:</span> {formatCryptoValueUpdate(parseFloat(pair.fdv))}</p>
+                                    <p className={styles.liquidity}><span>Liquidity:</span> {formatCryptoValueUpdate(parseFloat(pair.liquidity.usd))}</p>
                                 </div>
                             </div>
                             <div className={styles.card_right}>

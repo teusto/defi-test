@@ -12,6 +12,7 @@ import Custom from '../Widgets/Custom';
 
 
 const Header = () => {
+  //const isLogged = true
   const { isLogged } = useAuth();
   const { status, isConnected } = useAppKitAccount()
   const { account } = useAccount()
@@ -20,7 +21,7 @@ const Header = () => {
     <div className={styles.wrapper}>
       <div className={styles.top}>
         <div className={styles.logo}>
-          <AiOutlineEye size={'100%'}/>
+          <AiOutlineEye size={'100%'} />
         </div>
         <div className={styles.title}>
           <span>Experience the Ultimate Trading Platform</span>
@@ -29,7 +30,7 @@ const Header = () => {
       </div>
       <div className={styles.bottom}>
         <div className={styles.menu}>
-          <Menu />
+          {isLogged && <Menu />}
         </div>
         <div className={styles.text_container}>
           {isLogged ?
@@ -38,8 +39,11 @@ const Header = () => {
           }
         </div>
         <div className={styles.widgets_bar}>
-          <Favorites />
-          <Custom />
+          {isLogged && 
+          <>
+            <Favorites />
+            <Custom />
+          </>}
         </div>
       </div>
     </div >

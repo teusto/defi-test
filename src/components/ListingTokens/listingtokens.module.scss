@@ -68,6 +68,8 @@
                     span {
                         color: #e0e1dd50;
                         font-size: 1.2rem;
+                        font-weight: bold;
+                        margin-right: .25rem;
                     }
                 }
             }
@@ -81,13 +83,16 @@
                     align-items: center;
                     border: 1px solid #f5cb5c;
                     margin-right: 1rem;
-                    padding: .1rem 1.5rem;
+                    padding: .25rem 1.5rem;
                     border-radius: 4px;
                     box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
-
+                    font-size: .85rem;
+                    font-weight: bold;
                     span {
                         color: #e0e1dd50;
                         font-size: 1rem;
+                        
+                        margin-right: .25rem;
                     }
                 }
 
@@ -97,13 +102,16 @@
                     align-items: center;
                     border: 1px solid #f5cb5c;
                     margin-right: 1rem;
-                    padding: .1rem 1.5rem;
+                    padding: .25rem 1.5rem;
                     border-radius: 4px;
                     box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
-
+                    font-size: .85rem;
+                    font-weight: bold;
                     span {
                         color: #e0e1dd50;
                         font-size: 1rem;
+                        
+                        margin-right: .25rem;
                     }
                 }
 
@@ -113,13 +121,17 @@
                     align-items: center;
                     border: 1px solid #f5cb5c;
                     margin-right: 1rem;
-                    padding: .1rem 1.5rem;
+                    padding: .25rem 1.5rem;
                     border-radius: 4px;
                     box-shadow: rgba(0, 0, 0, 0.25) 1.95px 1.95px 2.6px;
+                    font-size: .85rem;
+                    font-weight: bold;
 
                     span {
                         color: #e0e1dd50;
                         font-size: 1rem;
+                        
+                        margin-right: .25rem;
                     }
                 }
             }
@@ -329,7 +341,8 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
-                margin-left: auto;
+                width: 100%;
+                margin-top: 1rem;
 
                 .favorite {
                     width: 50px;
@@ -352,7 +365,7 @@
             
             width: 100%;
             display: flex;
-            flex-direction: column-reverse;
+            flex-direction: column;
 
             .chart_container {
                 
