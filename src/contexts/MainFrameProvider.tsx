@@ -7,7 +7,6 @@ const MainFrameProvider = ({ children }) => {
     const [dataToChart, setDataToChart] = useState([])
 
     const update = (data, chartData) => {
-        console.log({chartData})
         setDataToList(data);
         setDataToChart(chartData)
     }

@@ -11,7 +11,7 @@ const ListingTokens = () => {
     const { dataToList, dataToChart } = useMainFrame();
     const { updateFavoritesList, searchOnTheFavorites } = useWidgets();
 
-    console.log(dataToChart)
+    console.log({dataToChart, dataToList})
 
     return (
         <div className={styles.wrapper}>
@@ -21,9 +21,9 @@ const ListingTokens = () => {
                     <>
                         <div className={styles.card_container} key={index}>
                             <div className={styles.card_left}>
-                                <div className={styles.image_container}><img src={pair.info.imageUrl} /></div>
+                                <div className={styles.image_container}><img src={pair.info?.imageUrl ? pair.info?.imageUrl : undefined} /></div>
                                 <div className={styles.name}>
-                                    <p>{pair.baseToken.name} || {pair.baseToken.symbol}</p>
+                                    <p>{pair.baseToken.name} - {pair.baseToken.symbol}<span className={styles.quote}>{pair.quoteToken.symbol}</span></p>
                                 </div>
                             </div>
                             <div className={styles.card_mid}>
@@ -35,6 +35,7 @@ const ListingTokens = () => {
                                     <p className={styles.cap}><span>Mkt Cap:</span> {formatCryptoValueUpdate(parseFloat(pair.marketCap))}</p>
                                     <p className={styles.fdv}><span>FDV:</span> {formatCryptoValueUpdate(parseFloat(pair.fdv))}</p>
                                     <p className={styles.liquidity}><span>Liquidity:</span> {formatCryptoValueUpdate(parseFloat(pair.liquidity.usd))}</p>
+                                    <p className={styles.liquidity}><span>Chain:</span> {pair.chainId}</p>
                                 </div>
                             </div>
                             <div className={styles.card_right}>
